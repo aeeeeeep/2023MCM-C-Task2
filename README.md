@@ -6,6 +6,7 @@ The second question of 2023 MCM-ICM Problem C
 ```bash
 ├── 2.py			# train & pred
 ├── features.py		# extract 6 features
+├── find.py         # return features
 ├── requirements.txt
 └── tries.py		# normal distribution curve fit, convert 7 percent features into 2 features
 ```
