@@ -17,10 +17,12 @@ The second question of 2023 MCM-ICM Problem C
 
 ```bash
 conda create --name hanlp python=3.8
+conda activate hanlp
 pip install -r requirements.txt
-python features.py
+python features.py # features.py use tensorflow
 python tries.py
-python 2.py
+conda deactivate
+python 2.py # 2.py use torch
 ```
 
 ## Blog
