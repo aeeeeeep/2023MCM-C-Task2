@@ -1,17 +1,21 @@
 # 2023MCM-C-Task2
+
 The second question of 2023 MCM-ICM Problem C
 
 ## Tree
 
 ```bash
+├── data
+│   ├── df.xlsx     # processed data after run features.py
+│   ├── Problem_C_Data_Wordle.xlsx  # raw data
+│   ├── unigram_freq.csv    # download from https://www.kaggle.com/datasets/rtatman/english-word-frequency
+│   └── words.json  # raw words
 ├── 2.py			# train & pred
 ├── features.py		# extract 6 features
 ├── find.py         # return features
 ├── requirements.txt
 └── tries.py		# normal distribution curve fit, convert 7 percent features into 2 features
 ```
-
-> unigram_freq.csv is download from https://www.kaggle.com/datasets/rtatman/english-word-frequency 
 
 ## Run
 

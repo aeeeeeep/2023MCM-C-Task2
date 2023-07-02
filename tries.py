@@ -4,7 +4,7 @@ import numpy as np
 from sklearn import metrics
 from scipy.optimize import curve_fit
 
-df = pd.read_excel('./df.xlsx')
+df = pd.read_excel('./data/df.xlsx')
 tries = df.iloc[:, 5:12]
 
 def normal_distribution(x, mu, sigma):

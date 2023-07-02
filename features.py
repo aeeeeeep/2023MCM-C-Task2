@@ -5,8 +5,8 @@ import numpy as np
 import holidays
 import datetime
 
-df = pd.read_excel('./Problem_C_Data_Wordle.xlsx')
-unigram_freq = pd.read_csv('./unigram_freq.csv')
+df = pd.read_excel('./data/Problem_C_Data_Wordle.xlsx')
+unigram_freq = pd.read_csv('./data/unigram_freq.csv')
 df['Date'] = df['Date'].apply(pd.to_datetime)
 
 y1 = df.loc[:,'1 try']
@@ -126,4 +126,4 @@ df['popts0'] = popts0
 df['popts1'] = popts1
 # print(popts0, popts1)
 
-df.to_excel("df.xlsx", index=False)
+df.to_excel("./data/df.xlsx", index=False)

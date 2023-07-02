@@ -96,7 +96,7 @@ class Dataset(Dataset):
         return self.len
 
 def train():
-    df = pd.read_excel('./df.xlsx')
+    df = pd.read_excel('./data/df.xlsx')
     tries = df.iloc[1:, 12:20]
     train_data = tries.values[:,:-2]
     train_data = mm.fit_transform(train_data)
@@ -181,7 +181,7 @@ def normal_distribution(x, mu, sigma):
     return 1 / (sigma * np.sqrt(2 * np.pi)) * np.exp(-(x - mu) ** 2 / (2 * sigma ** 2))
 
 def pred(val):
-    df = pd.read_excel('./df.xlsx')
+    df = pd.read_excel('./data/df.xlsx')
     tries = df.iloc[1:, 12:20]
     train_data = tries.values[:,:-2]
     train_data = mm.fit_transform(train_data)

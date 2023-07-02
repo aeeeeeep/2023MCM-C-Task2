@@ -13,7 +13,7 @@ from nltk.corpus import sentiwordnet
 def find(word, date=0, need_date=True):
     attribute = []
     # 词频统计
-    unigram_freq = pd.read_csv('./unigram_freq.csv')
+    unigram_freq = pd.read_csv('./data/unigram_freq.csv')
     try:
         attribute.append(int(unigram_freq.loc[unigram_freq["Word"] == word]["Count"]))
     except:
@@ -80,10 +80,10 @@ def find(word, date=0, need_date=True):
 
 
 if __name__ == "__main__":
-    df = pd.read_json('./words.json')
+    df = pd.read_json('./data/words.json')
     finds = []
     for i in df['words']:
         finds.append(find("eerie", date=0, need_date=False))
     print(finds.shape)
     # df[]
-    # df.to_excel("finds.xlsx", index=False)
+    # df.to_excel("./data/finds.xlsx", index=False)
