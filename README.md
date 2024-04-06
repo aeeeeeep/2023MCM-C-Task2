@@ -31,4 +31,4 @@ python 2.py # 2.py use torch
 
 ## Blog
 
-https://aeeeeeep.top/2023/02/23/2023MCM-ICM%E7%BE%8E%E8%B5%9BC%E9%A2%98%E7%AC%AC%E4%BA%8C%E9%A2%98%E6%80%9D%E8%B7%AF/
+https://aeeeeeep.top/p/c1bfab13/
